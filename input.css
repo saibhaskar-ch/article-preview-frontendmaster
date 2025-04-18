@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-manrope: "Manrope", sans-serif;
+}
+
+@layer base {
+  body > div {
+    @apply min-h-[100vh] font-manrope;
+  }
+
+  body > div > div {
+    @apply min-h-[96.1vh];
+  }
+}
+
+@layer components{
+    .share-container{
+     @apply bg-[hsl(217,19%,35%)] w-full lg:w-65 px-6 lg:px-10  py-5 rounded-b-xl lg:rounded-xl
+    }
+
+    .share-container:before{
+      @apply hidden lg:block content-[''] w-5 h-5 absolute bg-[hsl(217,19%,35%)] left-[48%] -bottom-2 rotate-45
+    }
+
+    .share-button-positioning{
+      @apply absolute right-6 bottom-3 z-10 lg:static
+    }
+}

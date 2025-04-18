@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="output.css" />
+
+    <script
+      src="https://kit.fontawesome.com/74ed731773.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Frontend Mentor | Article preview component</title>
+  </head>
+  <body class="bg-[hsl(210,46%,95%)] flex justify-center">
+    <div class="max-w-[900px]">
+      <div class="flex items-center">
+        <main class="py-20 px-5">
+          <article class="bg-white rounded-xl lg:flex">
+            <figure class="lg:w-[40%] overflow-hidden rounded-t-xl lg:rounded-l-xl lg:rounded-t-none">
+              <img class="lg:h-full" src="./images/drawers.jpg" alt="drawer" />
+            </figure>
+
+            <div class="lg:w-[60%]">
+              <div class="pt-10 pb-4 lg:pb-2 px-6 lg:px-10">
+                <h2
+                  class="text-lg lg:text-2xl font-bold text-[hsl(217,19%,35%)] mb-5"
+                >
+                  Shift the overall look and feel by adding these wonderful
+                  touches to furniture in your home
+                </h2>
+                <p
+                  class="text-[hsl(214,17%,51%)] text-sm lg:text-lg leading-6 lg:leading-8"
+                >
+                  Ever been in a room and felt like something was missing?
+                  Perhaps it felt slightly bare and uninviting. I've got some
+                  simple tips to help you make any room feel complete.
+                </p>
+              </div>
+
+              <div class=" px-6 lg:px-10 py-5 lg:py-7 flex items-center justify-between relative">
+                <div class="flex items-center gap-4 text-sm lg:text-lg">
+                  <figure
+                    class="rounded-full w-11 h-11 lg:w-12 lg:h-12 overflow-hidden"
+                  >
+                    <img
+                      src="images/avatar-michelle.jpg"
+                      alt="Michelle Appleton"
+                    />
+                  </figure>
+                  <div>
+                    <p class="text-[hsl(217,19%,35%)]">
+                      <strong>Michelle Appleton</strong>
+                    </p>
+                    <p class="text-[hsl(212,23%,69%)]">28 Jun 2020</p>
+                  </div>
+                </div>
+
+                <button
+                  id="share-button"
+                  role="button"
+                  class="bg-[hsl(210,46%,95%)] rounded-full w-9 h-9 lg:w-10 lg:h-10 flex justify-center items-center"
+                >
+                  <i class="fa-solid fa-share text-[hsl(214,17%,51%)]"> </i>
+                </button>
+
+                <div
+                  id="share-container"
+                  class="hidden left-0 bottom-0 lg:bottom-[99%] lg:left-[64%] share-container"
+                >
+                  <div class="text-[hsl(212,23%,69%)] flex lg:justify-center gap-4 items-center">
+                    <p class="uppercase text-xs tracking-[5px]">SHARE</p>
+                    <a href="https://www.facebook.com/"
+                      ><img src="images/icon-facebook.svg" alt="facebook"
+                    /></a>
+                    <a href="https://x.com/?lang=en"
+                      ><img src="images/icon-twitter.svg" alt="twitter"
+                    /></a>
+                    <a href="https://www.pinterest.com/"
+                      ><img src="images/icon-pinterest.svg" alt="pinterest"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </main>
+      </div>
+
+      <footer class="text-center">
+        Challenge by
+        <a
+          class="text-blue-500 hover:underline"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >.
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
